@@ -5,9 +5,9 @@ class EnhancedSelectionType extends eZDataType
     const DATATYPESTRING = 'enhancedselection';
     const CLASS_STORAGE_XML = 'data_text5';
 
-    function EnhancedSelectionType()
+    function __construct()
     {
-        $this->eZDataType( self::DATATYPESTRING,
+        parent::__construct( self::DATATYPESTRING,
                            ezpI18n::tr( 'extension/enhancedselection/datatypes', 'Enhanced Selection', 'Datatype name' ),
                            array( 'serialize_supported' => true,
                                   'object_serialize_map' => array( 'data_text' => 'selection' )
