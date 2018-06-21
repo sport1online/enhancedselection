@@ -11,6 +11,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "sport1online/ezpublish-legacy-installer": "*"
+        "ezsystems/ezpublish-legacy-installer": "*"
     }
 }
